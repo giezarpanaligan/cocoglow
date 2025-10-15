@@ -278,3 +278,19 @@ footer .copyright {
   text-align: center;
 }
 
+/* Social icons: clean, compact, uniform */
+.social-links{ display:flex; gap:12px; flex-wrap:wrap; margin-top:.3rem; }
+.social{
+  display:inline-flex; align-items:center; gap:6px;
+  padding:4px 8px; border-radius:8px;
+  color:#0f6f63; text-decoration:none; font-weight:600;
+  transition: background .15s ease, transform .15s ease;
+}
+.social:hover{ background:rgba(15,111,99,.06); }
+.social svg{
+  width:18px; height:18px; display:inline-block !important;
+}
+
+/* brand tints (subtle) */
+.social-ig svg{ color:#E1306C; }   /* Instagram */
+.social-pi svg{ color:#BD081C; }   /* Pinterest */
