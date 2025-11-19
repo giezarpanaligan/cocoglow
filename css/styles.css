@@ -1145,3 +1145,73 @@ section#notes h2 {
 .feature-grid {
   margin-bottom: 1rem !important;   /* smaller gap below feature grid */
 }
+
+/* === Black Friday Promo Banner Styles === */
+.black-friday-banners {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 1rem 0;
+  background-color: #000; /* makes banners pop */
+}
+
+.black-friday-banners .banner-row {
+  text-align: center;
+}
+
+.black-friday-banner img {
+  display: block;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* hover effect */
+.black-friday-banner:hover img {
+  transform: scale(1.02);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.35);
+}
+
+/* Top banner spacing */
+.top-banner {
+  margin-bottom: 1rem;
+}
+
+/* Bottom banner spacing */
+.bottom-banner {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* === Customer Notes Layout Fix === */
+.notes-section {
+  margin-top: 2rem;
+}
+
+.notes-layout {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.notes-banner img {
+  display: block;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.notes-content {
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .notes-layout {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
